@@ -1,4 +1,3 @@
-clear;clc;
 zdata=[1 0 0 1;
     2 0 0 0.8;
     1 3 0 0.2;
@@ -10,11 +9,11 @@ nr=zdata(:,2);
 r=zdata(:,3);
 x=zdata(:,4);
 
-nbr=length(n1)
-nbus=max(max(n1),max(nr))
-z=r+1i*x
-y=ones(nbr,1)./z
-Y=zeros(nbr,nbr)
+nbr=length(n1);
+nbus=max(max(n1),max(nr));
+z=r+1i*x;
+y=ones(nbr,1)./z;
+Y=zeros(nbr,nbr);
 
 for k=1:nbr
  if n1(k)>0&&nr(k)>0
